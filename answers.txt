@@ -1,0 +1,38 @@
+-----------
+Question 3:
+---------------------------
+Runtime : EMR
+----------------------------
+Rnning time was 285.0s (not counting time spent waiting for the EC2 instances)
+
+-----------------------------
+Runtime : Local : Macbook Air : Intel Haswell CPU
+-----------------------------
+real	2m23.417s
+
+user	2m23.953s
+
+sys	0m4.478s
+
+-----------
+Question 4:
+-----------
+How many address tags are there in the input?
+
+EMR Job
+part-00002:"address"	2042
+
+Local Job
+"address"	2042
+
+----------
+Question 5:
+----------
+Does the local version and EMR version give the same answer?
+
+For "address" the local and EMR versions do match.
+
+At first glance the local and EMR results dont match, because EMR results span 3 files while local results span 2 files.
+
+But after concatenating the files, sorting and uniquifying the results, one observes that the results are identical.
+
